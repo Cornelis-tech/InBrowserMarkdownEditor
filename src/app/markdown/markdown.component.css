@@ -1,7 +1,54 @@
 .navbar{
-  display: inline-flex;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(54, 54, 54, 0.034);
+  padding: 15px;
+}
+
+#logo{
+  background: none;
+  padding: 10px;
+}
+#menu{
+  background:none;
+  padding: 10px;
+}
+#delete{
+  background:none;
+  padding: 10px;
+
+}
+
+.Save-Changes{
+  background-color: rgb(248, 103, 6);
+  padding: 10px;
+  border-radius: 4%;
+}
+.document-name{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.write{
+  display: flex;
+  justify-content: space-between;
+
+}
+textarea {
+  flex: 1;
+  width: 45%;
+  height: auto;
+  resize:vertical;
+  color: white;
+}
+.Created-preview {
+  width: 45%;
+  border: 1px solid #ad4c0c;
+  color: white;
+  resize: vertical;
+  overflow-y: auto;
+}
+.formattedMarkdown{
+  white-space: pre-wrap;
 }
