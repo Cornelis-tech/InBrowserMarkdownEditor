@@ -1,19 +1,21 @@
 <nav class="navbar">
-  <button>
-    <img src="public\assets\icon-menu.svg" alt="Menu" id="menu">
-  </button>
-  <img src="public\assets\logo.svg" alt="Logo" id="logo">
-  <div class="document-name">
-    <img src="public\assets\icon-document.svg" alt="Document-name">
-    Welcome.md
+  <div class="navbar-left">
+    <button class="menu-icon" aria-label="Menu">
+      <img src="public/assets/icon-menu.svg" alt="Menu">
+    </button>
+    <img src="public/assets/logo.svg" alt="Logo" class="logo">
   </div>
-  <button class="delete">
-    <img src="public\assets\icon-delete.svg" alt="delete" id="delete">
+ <div class="navbar-center">
+  <img src="public/assets/icon-document.svg" alt="Document" class="document-icon"><span class="document-name">Welcome.md</span>
+ </div>
+ <div class="navbar-right">
+  <button class="delte-icon" aria-label="delete">
+    <img src="public/assets/icon-delete.svg" alt="Delete">
   </button>
-  <button class="Save-Changes">
-    <img src="public\assets\icon-save.svg" alt="save">
-    Save Changes
-  </button>
-
+  <button class="Save-Changes"><img src="public/assets/icon-save.svg" alt="Save">Save Changes</button>
+ </div>
 </nav>
+<div class="Markdown">
+  <ejs-richtexteditor [(value)]="markDownValue" saveInterval="1" height="44"></ejs-richtexteditor>
+</div>
 

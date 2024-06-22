@@ -13,6 +13,8 @@ import { MarkdownComponent } from './markdown/markdown.component';
 export class AppComponent {
   title = 'InBrowserMarkdownEditor';
 
-  }
+}
+
+
 
 

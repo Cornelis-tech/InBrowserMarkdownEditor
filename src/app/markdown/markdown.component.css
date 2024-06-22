@@ -1,36 +1,48 @@
-.navbar{
-  background-color: rgb(15, 15, 15);
-  display: flex;
+.navbar {
+  display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 0.5rem 1rem;
+  background-color: #ebe1e1fb;
+  border-radius: 1px solid #dee2e6;
 }
 
-#logo{
-  background: none;
-  padding: 10px;
-}
-#menu{
-  background:none;
-  padding: 10px;
-}
-#delete{
-  background:none;
-  padding: 10px;
-
-}
-
-.Save-Changes{
-  background-color: rgb(248, 103, 6);
-  padding: 10px;
-  border-radius: 4%;
-}
-.document-name{
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-.write{
+.navbar-center, .navbar-left, .navbar-right {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon, .delte-icon .Save-Changes{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-icon img, .delte-icon img {
+  width: 24px;
+  height: 24px;
+}
+.logo {
+  height: 40px;
+  margin-left: 1rem;
+}
+.document-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+.document-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Save-Changes {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f26508;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.Save-Changes:hover {
+  background-color: #f1a431;
 }

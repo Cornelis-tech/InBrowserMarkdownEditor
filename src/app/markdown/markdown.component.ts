@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./markdown.component.css']
 })
 export class MarkdownComponent {
+  markdownText: string= '';
+markDownValue: any;
+
+  get previewText(): string{
+    return this.markdownText;
+  }
 
 
 }
